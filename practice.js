@@ -45,7 +45,7 @@
 
 
 // // Write a method that prints out every number from 1 to 100. 
-var number = 1
+var number = 1;
 while (number <= 100) {
   console.log(number);
   number++;
@@ -104,9 +104,10 @@ console.log(itemAmounts);
 // Start with the hash: item_amounts = {chair: 5, table: 2}
 // You received 7 desks to sell. Change the hash to include desks.
 // The final result should be: {chair: 5, table: 2, desk: 7}
-var itemAmounts = { chair: 5, table: 2 };
+itemAmounts = { chair: 5, table: 2 };
 itemAmounts.desk = 7;
 console.log(itemAmounts);
+itemAmounts = {};
 
 
 
