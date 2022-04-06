@@ -36,15 +36,52 @@ var books = [
 ];
 console.log(books[2].author);
 
-// # 6. Make a hash to store 3 different states and their captitals. Then add a new state and capital and print the hash to see the result.
+// # 6. Make a hash to store 3 different states and their capitals. Then add a new state and capital and print the hash to see the result.
+var states = {
+  Kansas: "Topeka",
+  Washington: "Olympia",
+  California: "Sacramento"
+};
+states.NewYork = "Albany";
+console.log(states);
 
 // # 7. Make a hash to store a laptop's brand, model, and year. Then print each attribute on separate lines.
+var laptop = {
+  brand: "Apple",
+  model: "MacBook Air",
+  year: 2022
+};
+
+console.log(laptop.brand);
+console.log(laptop.model);
+console.log(laptop.year);
+
+for (let prop in laptop) {
+  console.log(laptop[prop]);
+}
 
 // # 8. Make an array of hashes to store the brand and model for 3 different laptops. Then print out the second laptop's model.
+var laptops = [
+  laptop,
+  { brand: "Dell", model: "Latitude", year: "2019" },
+  { brand: "Acer", model: "Aspire", year: "2016" }
+];
+console.log(laptops[1].model);
 
 // # 9. Make a hash to store definitions for 2 different words. Then add a new word and definition and print the hash to see the result.
+var words = { "couch": "a thing you and 1-3 others can sit on", "glasses": "they help you see" };
+words.mouse = "a small animal or a thing to help you use your computer";
+console.log(words);
 
 // # 10. Make a hash to store a shirt's brand, color, and size. Then print each attribute on separate lines.
+var shirt = {
+  brand: "Banana Republic",
+  color: "black",
+  size: "small"
+};
 
+for (let prop in shirt) {
+  console.log(shirt[prop]);
+}
 
 // # SOLUTIONS: https://gist.github.com/peterxjang/d257aec07882d78009bd796ed53f81bb
